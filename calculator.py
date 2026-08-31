@@ -1,3 +1,4 @@
+print("Welcome to my calculator!")
 print("Simple Calculator")
 num1 = float(input("Enter First Number: "))
 operator = input("Enter operator (+, -, *, /): ")
@@ -9,8 +10,9 @@ elif operator == "-":
 elif operator == "*":
   print("Result:", num1 * num2)
 elif operator == "/":
-  print("Result:", num1 / num2)
+  if num2 != 0:
+      print("Result:", num1 / num2)
+  else:
+      print("Cannot divide by zero.")
 else:
-  print("Cannot divide by zero.")
-else:
-print("Invalid operator.")
+  print("Invalid operator.")
